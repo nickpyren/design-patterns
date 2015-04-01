@@ -1,5 +1,7 @@
 ﻿using System;
-using DesignPatterns.Factory;
+using DesignPatterns.Helpers.Vehicles;
+using DesignPatterns.Patterns.Factory;
+using DesignPatterns.Patterns.Observer;
 
 namespace DesignPatterns
 {
@@ -11,8 +13,21 @@ namespace DesignPatterns
 
             var vehicleFactory = new VehicleFactory();
 
-            IVehicle vehicle = vehicleFactory.GetVehicle(VehicleType.Car);
-            Console.WriteLine(vehicle.Drive());
+            IVehicle vehicle = vehicleFactory.CreateVehicle(VehicleType.Car);
+            vehicle.Drive();
+
+            Console.WriteLine("\n---------------------------------------------------------------");
+            Console.WriteLine("-----------------------Observer Example--------------------------\n");
+
+            var trafficLight = new TrafficLight();
+
+            trafficLight.DriveUpToLight(new Car());
+            trafficLight.DriveUpToLight(new Truck());
+            trafficLight.DriveUpToLight(new Motorcycle());
+            trafficLight.DriveUpToLight(new Car());
+            trafficLight.DriveUpToLight(new Bicycle());
+
+            trafficLight.TurnGreen();
 
             Console.WriteLine("\n---------------------------------------------------------------");
             Console.ReadKey();

@@ -1,10 +1,10 @@
-﻿using DesignPatterns.Factory.Vehicles;
+﻿using DesignPatterns.Helpers.Vehicles;
 
-namespace DesignPatterns.Factory
+namespace DesignPatterns.Patterns.Factory
 {
     public class VehicleFactory
     {
-        public IVehicle GetVehicle(VehicleType type)
+        public IVehicle CreateVehicle(VehicleType type)
         {
             if (type == VehicleType.Car)
             {

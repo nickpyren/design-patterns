@@ -1,5 +1,5 @@
 ﻿
-namespace DesignPatterns.Factory
+namespace DesignPatterns.Helpers.Vehicles
 {
     public enum VehicleType
     {
