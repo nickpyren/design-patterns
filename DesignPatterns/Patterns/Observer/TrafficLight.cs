@@ -21,7 +21,7 @@ namespace DesignPatterns.Patterns.Observer
         {
             foreach (var vehicle in _vehiclesAtLight)
             {
-                vehicle.AlertGreenLight();
+                vehicle.ShowGreenLight();
             }
         }
     }

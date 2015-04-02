@@ -8,7 +8,7 @@ namespace DesignPatterns.Helpers.Vehicles
 {
     public abstract class Vehicle : IVehicle
     {
-        public void AlertGreenLight()
+        public void ShowGreenLight()
         {
             Drive();
         }

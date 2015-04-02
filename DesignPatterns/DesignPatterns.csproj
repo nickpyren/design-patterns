@@ -47,8 +47,8 @@
     <Compile Include="Helpers\Vehicles\Motorcycle.cs" />
     <Compile Include="Helpers\Vehicles\Truck.cs" />
     <Compile Include="Helpers\Vehicles\Vehicle.cs" />
+    <Compile Include="Helpers\Vehicles\VehicleType.cs" />
     <Compile Include="Patterns\Factory\VehicleFactory.cs" />
-    <Compile Include="Patterns\Factory\VehicleType.cs" />
     <Compile Include="Patterns\Observer\TrafficLight.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
