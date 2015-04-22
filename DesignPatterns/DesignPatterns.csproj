@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\Electronics\EuropeanOutlet.cs" />
+    <Compile Include="Helpers\Electronics\NorthAmericanOutlet.cs" />
+    <Compile Include="Helpers\Electronics\PhoneCharger.cs" />
     <Compile Include="Helpers\Vehicles\Bicycle.cs" />
     <Compile Include="Helpers\Vehicles\Car.cs" />
     <Compile Include="Helpers\Vehicles\IVehicle.cs" />
@@ -48,6 +51,7 @@
     <Compile Include="Helpers\Vehicles\Truck.cs" />
     <Compile Include="Helpers\Vehicles\Vehicle.cs" />
     <Compile Include="Helpers\Vehicles\VehicleType.cs" />
+    <Compile Include="Patterns\Adapter\EuropeanOutletAdapter.cs" />
     <Compile Include="Patterns\Factory\VehicleFactory.cs" />
     <Compile Include="Patterns\Observer\TrafficLight.cs" />
     <Compile Include="Program.cs" />
@@ -56,10 +60,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Patterns\Adapter\" />
-    <Folder Include="Patterns\Singleton\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
